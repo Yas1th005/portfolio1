@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://majila.blog'),
   title: {
     template: '%s | akshat majila',
-    default: 'akshat majila',
+    default: 'panatala yaswanth',
   },
   description: 'I build things for the web.',
 };
