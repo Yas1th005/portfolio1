@@ -1,0 +1,42 @@
+---
+title: FileOS — Letting You Talk to Your File System
+date: '2025-02-10'
+tags: ['AI', 'NLP', 'python', 'automation']
+draft: false
+summary: FileOS is a smart file manager that uses Natural Language Processing to let you control files using plain English commands like "Delete all screenshots".
+---
+
+<img className="inline" src="/static/images/Blog/fileos.jpg" alt="FileOS NLP File Manager" />
+
+Sometimes, even experienced developers find managing files a chore — switching folders, renaming, organizing, searching. That’s why I built **FileOS**, a file manager that listens to natural English commands and responds with real actions. Think of it as a command-line assistant… but in plain English.
+
+Here are some of the features I implemented using **Python**, **tkinter**, and **NLP**:
+
+- Natural Language Commands
+
+  - You can say things like:
+    - “Move all PDFs to Documents”
+    - “Delete all screenshots from Downloads”
+    - “Create folder ‘Projects’ inside Desktop”
+  - Internally, I used tokenization and simple classification logic to break down intent and parameters from the sentence.
+
+- Real-Time File Monitoring
+
+  - FileOS uses the `watchdog` module to monitor directories and automatically move or categorize files based on extensions and content analysis.
+
+- Semantic File Search
+
+  - Users can search for files using terms like “tech documents” or “images from last week” and the app tries to infer file types and timestamps accordingly.
+
+- GUI Powered by tkinter
+
+  - I built a basic but clean interface using Python’s `tkinter` to let users enter commands, browse suggestions, and preview file actions before executing.
+
+- SQLite-Powered File Cache
+  - For large directories, FileOS builds a local cache using SQLite to speed up semantic searches and restore results faster.
+
+While the UI is minimal, the backend was the fun part. Parsing human language and translating it into real filesystem instructions — safely — is a challenge worth solving. FileOS doesn’t aim to be a replacement for your OS, but an augmentation.
+
+> What if file managers were smart enough to understand us instead of the other way around?
+
+That’s the idea behind FileOS. You talk. It listens. It acts.
