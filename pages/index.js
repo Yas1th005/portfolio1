@@ -19,7 +19,7 @@ export async function getStaticProps() {
 export default function Home({ posts }) {
   return (
     <>
-      <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
+      {/* <PageSEO title={siteMetadata.title} description={siteMetadata.description} /> */}
       <div>
         <div className="mb-12 flex flex-col items-center gap-x-12 xl:flex-row">
           <div className="pt-6">
@@ -203,7 +203,7 @@ export default function Home({ posts }) {
           Latest
         </h2>
         <hr className="border-gray-200 dark:border-gray-700" />
-        <ul>
+        {/* <ul>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
             const { slug, date, title, summary, tags } = frontMatter
@@ -253,7 +253,7 @@ export default function Home({ posts }) {
               </Link>
             )
           })}
-        </ul>
+        </ul> */}
       </div>
       {posts.length > MAX_DISPLAY && (
         <div className="flex justify-end pt-5 text-lg font-normal leading-6">
