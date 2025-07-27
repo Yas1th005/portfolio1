@@ -1,6 +1,6 @@
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import siteMetadata from '@/data/siteMetadata'
-import SnippetsLayout from '@/layouts/SnippetsLayout'
+// import SnippetsLayout from '@/layouts/SnippetsLayout'
 import { PageSEO } from '@/components/SEO'
 
 export const POSTS_PER_PAGE = 5
@@ -23,12 +23,12 @@ export default function Snippets({ posts, initialDisplayPosts, pagination }) {
         title={`Snippets - ${siteMetadata.author}`}
         description="Reuseable code snippets collected by Parth"
       />
-      <SnippetsLayout
+      {/* <SnippetsLayout
         posts={posts}
         initialDisplayPosts={initialDisplayPosts}
         pagination={pagination}
         title="All Snippets"
-      />
+      /> */}
     </>
   )
 }
