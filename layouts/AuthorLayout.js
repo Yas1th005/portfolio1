@@ -50,7 +50,6 @@ export default function AuthorLayout({ children, frontMatter }) {
               <a
                 className="rounded-full border px-8 py-2 text-center text-sm font-light text-gray-700 transition-colors hover:border-[#1DA1F2] hover:bg-[#1DA1F2] hover:text-white hover:shadow dark:text-white"
                 href="https://www.instagram.com/yaswanth_p_005"
-                data-screen-name="@_ParthDesai_"
                 target="_blank"
                 rel="noreferrer noopener"
               >
@@ -71,15 +70,15 @@ export default function AuthorLayout({ children, frontMatter }) {
               >
                 I’m passionate about AI, automation, and building scalable web systems. I've
                 presented national-level innovations like Pharmora at IInvenTiv 2025, IIT Madras,
-                and currently support startups through {' '}
+                and currently support startups through{' '}
                 <Link
                   href={'https://vnest.org'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
                 >
-                  V-NEST 
-                </Link>               
-                {" "} at VIT Chennai. I enjoy combining
-                tech, creativity, and problem-solving to build tools that make a real impact.
+                  V-NEST
+                </Link>
+                at VIT Chennai. I enjoy combining tech, creativity, and problem-solving to build
+                tools that make a real impact.
               </RoughNotation>
             </p>
             <br />

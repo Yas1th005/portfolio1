@@ -1,13 +1,13 @@
 ---
-name: Parth Desai
-avatar: /static/images/avatar.png
-occupation: Data Engineer
-company: Accenture
-email: desaiparth2000@gmail.com
-twitter: https://twitter.com/_ParthDesai_
-linkedin: https://www.linkedin.com/in/parth-desai-2bb1b0160/
-github: https://github.com/pycoder2000
-text1: I am an India based Data Engineer with a bachelors in Computer Science. I am passionate about Data Science and Automation. I am also fascinated with Mathematics and wish to make a career out of it someday.
+name: Panatala Yaswanth
+avatar: /static/images/mine.jpeg
+occupation: Full Stack Developer
+company: VNEST
+email: yashpanatala@gmail.com
+# twitter: https://twitter.com/_ParthDesai_
+linkedin: https://www.linkedin.com/in/panatala-yaswanth-9621aa293/
+github: https://github.com/Yas1th005
+text1: I am a Computer Science student and Full-Stack Developer passionate about Artificial Intelligence, Web Technologies, and building impactful products.
 text2:
 text3:
 ---
