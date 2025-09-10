@@ -8,8 +8,8 @@ const siteMetadata = {
   theme: 'system', // system, dark or light
   siteUrl: 'https://musing.vercel.app',
   siteRepo: 'https://github.com/pycoder2000/blog',
-  siteLogo: '/static/images/logo.png',
-  image: '/static/images/avatar.png',
+  siteLogo: '/static/images/love.png',
+  image: '/static/images/love.png',
   socialBanner: '/static/images/twitter-card.png',
   email: 'yashpanatala@gmail.com@gmail.com',
   github: 'https://github.com/Yas1th005',
