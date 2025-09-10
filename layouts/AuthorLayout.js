@@ -75,7 +75,7 @@ export default function AuthorLayout({ children, frontMatter }) {
                   href={'https://vnest.org'}
                   className="special-underline no-underline hover:text-gray-100 dark:text-gray-100 hover:dark:text-gray-100"
                 >
-                  V-NEST
+                  V-NEST{' '}
                 </Link>
                 at VIT Chennai. I enjoy combining tech, creativity, and problem-solving to build
                 tools that make a real impact.

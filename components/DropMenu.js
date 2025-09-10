@@ -95,7 +95,7 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item>
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/blog">
                   <a
@@ -112,7 +112,7 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
             {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/snippets">
@@ -167,7 +167,7 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item>
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <>
                   <Link>
@@ -211,7 +211,7 @@ export default function DropMenu() {
                   </Link>
                 </>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
           </div>
           <div className="py-1">
             <Menu.Item>
@@ -232,7 +232,7 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item>
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/tags">
                   <a
@@ -249,7 +249,7 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
             {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/guestbook">
@@ -268,7 +268,7 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item> */}
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/uses">
                   <a
@@ -285,7 +285,7 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
             <Menu.Item>
               {({ active }) => (
                 <Link href="/now">
@@ -304,7 +304,7 @@ export default function DropMenu() {
                 </Link>
               )}
             </Menu.Item>
-            <Menu.Item>
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/stats">
                   <a
@@ -321,8 +321,8 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
-            <Menu.Item>
+            </Menu.Item> */}
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/journey">
                   <a
@@ -339,8 +339,8 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
-            <Menu.Item>
+            </Menu.Item> */}
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/recommends">
                   <a
@@ -357,8 +357,8 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
-            <Menu.Item>
+            </Menu.Item> */}
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/quotes">
                   <a
@@ -375,8 +375,8 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
-            <Menu.Item>
+            </Menu.Item> */}
+            {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/activity">
                   <a
@@ -393,7 +393,7 @@ export default function DropMenu() {
                   </a>
                 </Link>
               )}
-            </Menu.Item>
+            </Menu.Item> */}
             {/* <Menu.Item>
               {({ active }) => (
                 <Link href="/tweets">

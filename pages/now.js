@@ -23,7 +23,7 @@ import {
 
 export const getServerSideProps = async () => {
   const response = await fetch(
-    'https://api.openweathermap.org/data/2.5/weather?lat=23.014770&lon=72.526330&appid=1b3c10c18e894eaf1fd63eedde53fa54&units=metric'
+    'https://api.openweathermap.org/data/2.5/weather?lat=12.843810&lon=80.153266&appid=1b3c10c18e894eaf1fd63eedde53fa54&units=metric'
   )
   const data = await response.json()
 
@@ -80,31 +80,31 @@ export default function Now(currentlyReading) {
   var YaswanthBirthDate = '2005-02-04'
   var birthDate = new Date(YaswanthBirthDate)
 
-  var ParthAge = year - birthDate.getFullYear()
+  var YaswanthAge = year - birthDate.getFullYear()
 
-  var ParthMonth = 0
-  if (month >= birthDate.getMonth()) ParthMonth = month - birthDate.getMonth()
+  var YaswanthMonth = 0
+  if (month >= birthDate.getMonth()) YaswanthMonth = month - birthDate.getMonth()
   else {
-    ParthAge--
-    ParthMonth = 12 + month - birthDate.getMonth()
+    YaswanthAge--
+    YaswanthMonth = 12 + month - birthDate.getMonth()
   }
 
-  var ParthDay = 0
-  if (date >= birthDate.getDate()) ParthDay = date - birthDate.getDate()
+  var YaswanthDay = 0
+  if (date >= birthDate.getDate()) YaswanthDay = date - birthDate.getDate()
   else {
-    ParthMonth--
-    ParthDay = 31 + date - birthDate.getDate()
-    if (ParthMonth < 0) {
-      ParthMonth = 11
-      ParthAge--
+    YaswanthMonth--
+    YaswanthDay = 31 + date - birthDate.getDate()
+    if (YaswanthMonth < 0) {
+      YaswanthMonth = 11
+      YaswanthAge--
     }
   }
 
   var age = {}
   age = {
-    years: ParthAge,
-    months: ParthMonth,
-    days: ParthDay,
+    years: YaswanthAge,
+    months: YaswanthMonth,
+    days: YaswanthDay,
   }
 
   var ageString = ''
@@ -141,12 +141,12 @@ export default function Now(currentlyReading) {
         <div>
           <div className="flex justify-between gap-5">
             <div className="mt-2 mb-10 w-1/2 rounded-md border border-gray-600 p-1 text-sm dark:border-gray-200">
-              <span className="ml-2 font-semibold">Location:</span> <span>Ahmedabad, India</span>
+              <span className="ml-2 font-semibold">Location:</span> <span>Chennai, Tamil Nadu</span>
               <br />
               <span className="ml-2 font-semibold">Weather:</span>{' '}
               <span>
                 <a
-                  href="https://weather.com/en-GB/weather/today/l/f42d9f8baa19b4d8d5e034449faa703839993366f64551a56a2b530297075dc2"
+                  href="https://weather.com/en-IN/weather/today/l/12.84,80.15"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline-offset-1 hover:underline"
@@ -160,15 +160,7 @@ export default function Now(currentlyReading) {
 
             <div className="mt-2 mb-10 w-1/2 rounded-md border border-gray-600 p-1 text-sm dark:border-gray-200">
               <span className="ml-2 font-semibold">Reading:</span>{' '}
-              <a
-                href={currentlyReadingData[0].url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="underline-offset-1 hover:underline"
-              >
-                <span>{currentlyReadingData[0].title}</span> by{' '}
-                <span>{currentlyReadingData[0].author}</span>
-              </a>
+              <span>Currently focusing on coursework</span>
               <br />
               <span className="ml-2 font-semibold">Age:</span> <span>{ageString}</span>
             </div>
@@ -186,7 +178,7 @@ export default function Now(currentlyReading) {
               </span>
             </div>
 
-            <div className="mt-2 mb-10 w-1/2 rounded-md border border-gray-600 p-1 text-sm dark:border-gray-200">
+            {/* <div className="mt-2 mb-10 w-1/2 rounded-md border border-gray-600 p-1 text-sm dark:border-gray-200">
               <span className="ml-2 font-semibold">Listening:</span>{' '}
               <span>
                 {data?.songUrl ? (
@@ -204,7 +196,7 @@ export default function Now(currentlyReading) {
               </span>
               <br />
               <span className="ml-2 font-semibold">Drinking:</span> <span>Coffee</span>
-            </div>
+            </div> */}
           </div>
         </div>
         <div className="justify-center text-center text-2xl font-medium text-gray-200 dark:text-gray-600">
@@ -213,39 +205,40 @@ export default function Now(currentlyReading) {
         {/* Work */}
         <div className="pb-4">
           <p>
-            I work as a Data Engineer at{' '}
+            I'm currently pursuing my B.Tech in Computer Science and Engineering at{' '}
             <Link
-              href={'https://www.accenture.com/'}
+              href={'https://chennai.vit.ac.in/'}
               className="special-underline no-underline dark:text-gray-100 hover:dark:text-gray-100"
             >
-              Accenture
+              VIT Chennai{' '}
             </Link>
-            .
+            with a CGPA of 9.30.
           </p>
           <br />
           <p>
-            I work on building pipelines and automating the entire process using Scala and Gcloud.
+            I work as a Technical Lead at V-NEST Startup Incubator, where I support 30+ early-stage
+            startups with product development and tech mentorship.
           </p>
           <br />
           <p>
-            I have been trying to shift my field from Data Engineering to Data Science. I have been
-            constantly applying for the same as well.
+            Recently, I showcased my project "Pharmora" at IInvenTiv 2025, IIT Madras, where it was
+            selected among the top 300 national innovations by the Ministry of Education ,Government
+            of India.
           </p>
           <br />
           <p>
-            My location preference is Bangalore but I am open to shift to another place for a better
-            opportunity.
+            I'm passionate about AI, full-stack development, and bioinformatics. Currently working
+            on several projects including AI-powered tools and web applications.
           </p>
           <br />
           <p>
-            I'm always trying to learn more, and at the moment I'm trying to follow this{' '}
+            I'm always eager to learn new technologies and collaborate on innovative projects. Feel
+            free to check out my work on{' '}
             <Link
-              href={
-                'https://www.youtube.com/watch?v=_u-PaJCpwiU&list=PLu0W_9lII9ai6fAMHp-acBmJONT7Y4BSG'
-              }
+              href={'https://github.com/Yas1th005'}
               className="special-underline no-underline dark:text-gray-100 hover:dark:text-gray-100"
             >
-              Machine Learning tutorial
+              GitHub
             </Link>
             .
           </p>
@@ -257,29 +250,22 @@ export default function Now(currentlyReading) {
         {/* Personal life */}
         <div className="pt-6">
           <p>
-            I've been slowly building this website, trying to share interesting things with anyone
-            who wants to read it.{' '}
-            <Link
-              href={'https://www.swyx.io/learn-in-public'}
-              className="special-underline no-underline dark:text-gray-100 hover:dark:text-gray-100"
-            >
-              This
-            </Link>{' '}
-            article is a great reason to start your blog.
+            I've been building various projects and sharing them with the community. From AI-powered
+            bioinformatics tools to real-time chat applications, I enjoy creating solutions that
+            make a difference.
           </p>
           <br />
           <p>
-            I am also going to start applying for Masters in Data Science in August 2022 for intake
-            of Fall 2023. I hope to get a good university near the West Coast. I'll update this page
-            after I get my admits.
+            Currently working on expanding my knowledge in machine learning and AI, while also
+            exploring opportunities in the startup ecosystem through my role at V-NEST.
           </p>
           <br />
           <p>
-            I recently started to draft a post about my new Obsidian worklfow, it will be a good
-            one!
+            When I'm not coding, you can find me exploring new technologies, contributing to
+            open-source projects, or working on my next innovative idea.
           </p>
         </div>
-        <div className="mt-3 text-sm">
+        {/* <div className="mt-3 text-sm">
           For more examples of folks with /now pages, check out{' '}
           <Link
             href={'https://nownownow.com/'}
@@ -288,7 +274,7 @@ export default function Now(currentlyReading) {
             nownownow.com
           </Link>
           .
-        </div>
+        </div> */}
       </div>
     </>
   )
