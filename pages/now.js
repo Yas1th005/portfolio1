@@ -178,7 +178,7 @@ export default function Now(currentlyReading) {
               </span>
             </div>
 
-            {/* <div className="mt-2 mb-10 w-1/2 rounded-md border border-gray-600 p-1 text-sm dark:border-gray-200">
+            <div className="mt-2 mb-10 w-1/2 rounded-md border border-gray-600 p-1 text-sm dark:border-gray-200">
               <span className="ml-2 font-semibold">Listening:</span>{' '}
               <span>
                 {data?.songUrl ? (
@@ -196,7 +196,7 @@ export default function Now(currentlyReading) {
               </span>
               <br />
               <span className="ml-2 font-semibold">Drinking:</span> <span>Coffee</span>
-            </div> */}
+            </div>
           </div>
         </div>
         <div className="justify-center text-center text-2xl font-medium text-gray-200 dark:text-gray-600">
@@ -265,16 +265,6 @@ export default function Now(currentlyReading) {
             open-source projects, or working on my next innovative idea.
           </p>
         </div>
-        {/* <div className="mt-3 text-sm">
-          For more examples of folks with /now pages, check out{' '}
-          <Link
-            href={'https://nownownow.com/'}
-            className="special-underline no-underline dark:text-gray-100 hover:dark:text-gray-100"
-          >
-            nownownow.com
-          </Link>
-          .
-        </div> */}
       </div>
     </>
   )

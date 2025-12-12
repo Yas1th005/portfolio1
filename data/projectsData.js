@@ -1,5 +1,25 @@
 const projectsData = [
   {
+    title: 'Jal Drishti',
+    description: `Built an AI-driven platform for policy analysis, enabling data-driven insights for policymakers across Indian administrative regions.`,
+    imgSrc: '',
+    href: '',
+    github: 'https://github.com/Yas1th005/SIH-2.0.git',
+    tech1: 'AI/ML',
+    tech2: 'Data Analytics',
+    tech3: 'Geospatial',
+  },
+  {
+    title: 'ezprep',
+    description: `Built VITPrep, a Next.js-based exam prep platform for VIT students featuring AI-powered question paper analysis with Google Gemini API, organized PYQ database, NPTEL integration, and PDF management. `,
+    imgSrc: '',
+    href: 'https://ezprep.vercel.app/',
+    github: '',
+    tech1: 'Next.js',
+    tech2: 'Gemini API',
+    tech3: 'AI-powered',
+  },
+  {
     title: 'Pharmora – AI Bioinformatics Suite',
     description: `Pharmora is an AI-powered bioinformatics suite for drug discovery and protein visualization. 🧬 Presented at IInvenTiv 2025, IIT Madras as one of India’s top 300 student innovations.`,
     imgSrc: '',

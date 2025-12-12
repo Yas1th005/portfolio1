@@ -3,11 +3,11 @@ const siteMetadata = {
   author: 'Panatala Yaswanth',
   headerTitle: 'Mere Musings',
   description: 'My personal blog where I share my musings',
-  // snippets: 'Reuseable code snippets collected by Parth',
+  snippets: 'Code snippets and technical resources by Yaswanth',
   language: 'en-us',
   theme: 'system', // system, dark or light
-  siteUrl: 'https://musing.vercel.app',
-  siteRepo: 'https://github.com/pycoder2000/blog',
+  siteUrl: 'https://www.yaswanth.codes/',
+  siteRepo: '',
   siteLogo: '/static/images/love.png',
   image: '/static/images/love.png',
   socialBanner: '/static/images/twitter-card.png',
@@ -15,7 +15,7 @@ const siteMetadata = {
   github: 'https://github.com/Yas1th005',
   twitter: '',
   linkedin: 'https://www.linkedin.com/in/panatala-yaswanth-9621aa293/',
-  website: 'https://portfolio1-ruby-five.vercel.app/',
+  website: 'https://www.yaswanth.codes/',
   locale: 'en-US',
   analytics: {
     plausibleDataDomain: '', // e.g. tailwind-nextjs-starter-blog.vercel.app
