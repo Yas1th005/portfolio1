@@ -475,7 +475,7 @@ export default function PrivacyPolicy() {
                 rel="external nofollow noopener noreferrer"
                 target="_blank"
               >
-                yashpanatala@gmail.com
+                panatala.yaswanth@gmail.com
               </a>
             </li>
           </ul>

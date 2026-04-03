@@ -12,7 +12,7 @@ const Contact = () => {
         </h1>
         <div className="pt-10 pb-8">
           <ul className="font-semi-bold flex flex-col space-y-4">
-            <ContactLink href="mailto:yashpanatala@gmail.com" title="gmail" icon="yashpanatala" />
+            <ContactLink href="mailto:panatala.yaswanth@gmail.com" title="gmail" icon="yaswanth" />
             <ContactLink href="https://github.com/Yas1th005" title="github" icon="Yas1th" />
             {/* <ContactLink
               href="https://twitter.com/_ParthDesai_"

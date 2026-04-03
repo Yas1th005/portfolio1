@@ -2,11 +2,13 @@ import Link from '@/components/Link'
 import { PageSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetadata from '@/data/siteMetadata'
+import projectsData from '@/data/projectsData'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import formatDate from '@/lib/utils/formatDate'
 import { RoughNotation } from 'react-rough-notation'
 import NewsletterForm from '@/components/NewsletterForm'
 import ViewCounter from '@/components/ViewCounter'
+import ProjectEmbedCard from '@/components/ProjectEmbedCard'
 
 const MAX_DISPLAY = 3
 
@@ -17,6 +19,8 @@ export async function getStaticProps() {
 }
 
 export default function Home({ posts }) {
+  const liveProjects = projectsData.filter((project) => project.href)
+
   return (
     <>
       <PageSEO title={siteMetadata.title} description={siteMetadata.description} />
@@ -62,7 +66,7 @@ export default function Home({ posts }) {
                 thoughts, reflections & everything&nbsp;
               </RoughNotation>
               in between. Have a good read!{' '}
-              <div className="mt-8 text-slate-600 dark:text-slate-400">
+              {/* <div className="mt-8 text-slate-600 dark:text-slate-400">
                 <span className="text-sm">Press</span>{' '}
                 <span className="rounded-md bg-gray-300 p-1 text-sm text-gray-900 dark:bg-gray-400">
                   ⌘
@@ -72,7 +76,7 @@ export default function Home({ posts }) {
                   K
                 </span>{' '}
                 <span className="text-sm">to start</span>
-              </div>
+              </div> */}
             </p>
           </div>
           {/* <div className="h-content sm:h-content-sm flex flex-col justify-around">
@@ -203,6 +207,38 @@ export default function Home({ posts }) {
           Latest
         </h2> */}
         <hr className="border-gray-200 dark:border-gray-700" />
+        <section className="py-10">
+          <h2 className="pb-6 text-3xl font-extrabold tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl md:text-5xl">
+            Highlights
+          </h2>
+          <div className="overflow-hidden rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-900">
+            <div className="flex items-center justify-between border-b border-gray-200 px-4 py-3 dark:border-gray-700">
+              <h3 className="text-sm font-semibold text-gray-900 dark:text-gray-100">
+                LeetCode Profile
+              </h3>
+              <Link
+                href="https://leetcode.com/u/yaswanth_p_005/"
+                className="text-sm font-medium text-primary-500 hover:underline"
+              >
+                View profile
+              </Link>
+            </div>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://leetcard.jacoblin.cool/yaswanth_p_005?theme=light&font=Karma&ext=heatmap"
+              alt="LeetCode stats for yaswanth_p_005"
+              loading="lazy"
+              className="block w-full dark:hidden"
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://leetcard.jacoblin.cool/yaswanth_p_005?theme=dark&font=Karma&ext=heatmap"
+              alt="LeetCode stats for yaswanth_p_005"
+              loading="lazy"
+              className="hidden w-full dark:block"
+            />
+          </div>
+        </section>
         {/* <ul>
           {!posts.length && 'No posts found.'}
           {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
@@ -255,17 +291,6 @@ export default function Home({ posts }) {
           })}
         </ul> */}
       </div>
-      {posts.length > MAX_DISPLAY && (
-        <div className="flex justify-end pt-5 text-lg font-normal leading-6">
-          <Link
-            href="/blog"
-            className=" special-underline-new text-primary-500 hover:text-gray-100 hover:no-underline dark:text-primary-500 hover:dark:text-gray-100"
-            aria-label="all posts"
-          >
-            All Posts &rarr;
-          </Link>
-        </div>
-      )}
       {siteMetadata.newsletter.provider !== '' && (
         <div className="flex items-center justify-center pt-4">{/* <NewsletterForm /> */}</div>
       )}

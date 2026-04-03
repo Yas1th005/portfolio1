@@ -23,7 +23,7 @@ export default function Footer() {
           </div>
           {`•`}
           <div className="mx-1">
-            <Link href="mailto:yashpanatala@gmail.com" className="link-underline">
+            <Link href="mailto:panatala.yaswanth@gmail.com" className="link-underline">
               Contact
             </Link>
           </div>
